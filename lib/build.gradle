@@ -13,6 +13,11 @@ plugins {
     id 'maven-publish'
 }
 
+jgitver {
+  nonQualifierBranches "master,main"
+}
+
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
