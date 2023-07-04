@@ -43,7 +43,7 @@ jobs:
       with:
         arguments: publish
       env:
-        GITHUB_ACTOR: ${{ github.actor }}
+#        GITHUB_ACTOR: ${{ github.actor }}
 #        GITHUB_TOKEN: ${{ secrets.GRADLE_REGISTRY_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #        GITHUB_TOKEN: ${{ github.token }}
