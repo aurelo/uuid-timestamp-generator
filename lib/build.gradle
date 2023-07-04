@@ -56,7 +56,7 @@ publishing {
 
     publications {
         maven(MavenPublication) { publication ->
-            artifact tasks.getByName("shadowJar")
+//            artifact tasks.getByName("shadowJar")
             groupId 'com.kanezi.github'
             artifactId 'uuid-timestamp-generator'
             version project.version
