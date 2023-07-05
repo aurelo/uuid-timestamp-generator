@@ -53,15 +53,19 @@ publishing {
     }
   }    
 
-    
-
     publications {
-        gpr(MavenPublication) { publication ->
+        gpr(MavenPublication) {
+            from(components.java)
+        }
+    }
+
+//    publications {
+//        gpr(MavenPublication) { publication ->
 //            artifact tasks.getByName("shadowJar")
 //            groupId 'com.kanezi.github'
 //            artifactId 'uuid-timestamp-generator'
 //            version "1.0.0"//project.version
-            from components.java
-        }
-    }
+//            from components.java
+//        }
+//    }
 }
